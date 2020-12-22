@@ -1,0 +1,40 @@
+# tehnikum_telegram_course
+# Задание 1
+i = 0
+summa = 0
+while i < 100:
+    i += 1
+    summa += i
+
+print(summa)
+
+# Задание 2
+n = int(input('Введите любое число : '))
+i = 0
+summa = 0
+while i < n:
+    i += 1
+    summa += i
+
+print(summa)
+# Задание 3
+
+
+
+while True:
+    x = int(input('Введите первое число : '))
+    y = int(input('Введите второе число : '))
+    symbol = input('Введите математический знак : ')
+
+    if symbol == '+':
+        print(x + y)
+    elif symbol == '-':
+        print(x - y)
+    elif symbol == '*':
+        print(x * y)
+    elif symbol == '/':
+        print(x / y)
+    elif symbol == '0':
+        break
+    else:
+        print('Неверный знак !')
