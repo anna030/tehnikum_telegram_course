@@ -1,0 +1,38 @@
+# tehnikum_telegram_course
+print('Привет, рад что заглянул !')
+
+data_base = []
+name = input('Введите своё имя : ')
+
+while True:
+    if not name:
+        print('Вы забыли указать имя ! ')
+        name = input('Введите своё имя : ')
+        continue
+
+    age = int(input("Извините за неприличный вопрос)), сколько Вам лет? "))
+    if not age:
+        print('Вы забыли ввести возраст ! ')
+        continue
+
+    while True:
+        print('Даёте ли вы согласие на обработку данных ? ')
+        choose = input('Напишите "Да" или "Нет" : ')
+        if choose == "Да":
+            number = input('Введите свой номер телефона !')
+            if not number:
+                continue
+            else:
+                break
+        else:
+            print('Вы точно уверены ?) ')
+            continue
+
+    if name and age and number:
+        data_base.append((name, age, number))
+
+    exit = input('Хотите выйти из программы ? ')
+    if exit == 'Да':
+        break
+
+print(data_base)
