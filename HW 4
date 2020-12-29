@@ -1,0 +1,36 @@
+# Задание 1
+lst = [1,2,3,4,5,6,7,8,9]
+
+i = 0
+while i < len(lst):
+    print(lst[i])
+    i += 1
+    
+    # Задание 2
+lst = []
+while True: # Бесконечный цикл
+    number = input('Введите число : ')
+    if not number:
+        print('Сумма чисел : ' + str(sum(lst)))
+        break
+    else:
+        lst.append(int(number))
+        
+        # Задание 4
+string = input('Введите строку : ')
+print('Третий символ : ' + string[2])
+print('Предпоследний символ : ' + string[-2])
+print('Первые пять символов : ' + string[:5])
+print('Все символы кроме двух последних : ' + string[:-2])
+print('Четные символы ' + string[::2])
+print('Нечётные символы : ' + string[1::2])
+print('В обратном порядке' + string[::-1])
+print('Через один в обратном порядке : ' + string[::-2])
+print('Длина строки ' + str(len(string)))
+
+# Задание 5
+string = input('Введите строку : ')
+string_list = reversed(string.split())
+string = ' '.join(string_list)
+
+print(string)
